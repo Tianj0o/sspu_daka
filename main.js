@@ -9,9 +9,9 @@ async function run(){
     await page.goto('https://id.sspu.edu.cn/cas/login?service=https%3a%2f%2fhsm.sspu.edu.cn');
     await page.waitFor(delyTime);
     const userId=await page.$("#username");
-    await userId.type("20191110602",{ delay: 1 });
+    await userId.type("Xxxxxxxxxx",{ delay: 1 });
     const password=await page.$("#password");
-    await password.type("123456789qqq",{ delay: 1 });
+    await password.type("xxxxxxxxx",{ delay: 1 });
     const submit_button=await page.$("#form1 > div.login-submit-box > button");
     await submit_button.click();//登录
     await page.waitFor(delyTime);
